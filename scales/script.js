@@ -76,7 +76,7 @@ function handleScaleSelection() {
         const encodedImageFileName = encodeURIComponent(displayType + (position === 'on' ? '-pos' : ''));
 
         // Build the image path based on the selected options
-        const imagePath = `/images/${encodedKeyValue}/${encodedMajorMinorValue}/${encodedScale}/${encodedImageFileName}.png`;
+        const imagePath = `scales/images/${encodedKeyValue}/${encodedMajorMinorValue}/${encodedScale}/${encodedImageFileName}.png`;
         scaleImage.src = imagePath;
         imageContainer.style.display = 'block';
     } else {
