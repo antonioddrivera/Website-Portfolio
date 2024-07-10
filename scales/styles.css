@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+header, footer {
+    text-align: center;
+    width: 100%;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Container for dropdowns */
+.dropdown-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Styling for each dropdown section */
+.dropdown {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 45%;
+    text-align: center;
+}
+
+.dropdown h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.dropdown label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.dropdown select {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: black; /* Default background color */
+    color: white; /* Default text color */
+}
+
+.dropdown select.selected {
+    background-color: blue; /* Background color when an option is selected */
+    color: white; /* Text color when an option is selected */
+}
+
+/* Styling for hidden sections */
+#majorList, #minorList {
+    display: none; /* Ensure they are hidden by default */
+}

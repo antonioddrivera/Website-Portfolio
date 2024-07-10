@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Scales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Guitar Scales</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="dropdown-container">
+                <div class="dropdown">
+                    <h2>Select Major or Minor</h2>
+                    <label for="majorMinor">Major/Minor:</label>
+                    <select id="majorMinor" onchange="handleSelection()">
+                        <option value="">--Please choose an option--</option>
+                        <option value="Major">Major</option>
+                        <option value="Minor">Minor</option>
+                    </select>
+                    <div id="quality"></div>
+                </div>
+
+                <div class="dropdown">
+                    <h2>Select a Key</h2>
+                    <label for="key">Key:</label>
+                    <select id="key" onchange="handleSelection()">
+                        <option value="">--Please choose a key--</option>
+                        <option value="A">A</option>
+                        <option value="A#">A#</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="C#">C#</option>
+                        <option value="D">D</option>
+                        <option value="D#">D#</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="F#">F#</option>
+                        <option value="G">G</option>
+                        <option value="G#">G#</option>
+                    </select>
+                    <div id="keySelected"></div>
+                </div>
+            </div>
+
+            <div class="dropdown" id="majorList" style="display: none;">
+                <h2>Major Scale Options</h2>
+                <label for="majorOption">Major Options:</label>
+                <select id="majorOption" onchange="handleScaleSelection()">
+                    <option value="">--Please choose a major option--</option>
+                    <option value="Ionian" label="Ionian/Major Scale"></option>
+                    <option value="Harmonic" label="Harmonic Major">Harmonic</option>
+                    <option value="Lydian">Lydian</option>
+                    <option value="Mixolydian">Mixolydian</option>
+                    <option value="Pentatonic" label="Major Pentatonic"></option>
+                </select>
+            </div>
+
+            <div class="dropdown" id="minorList" style="display: none;">
+                <h2>Minor Scale Options</h2>
+                <label for="minorOption">Minor Options:</label>
+                <select id="minorOption" onchange="handleScaleSelection()">
+                    <option value="">--Please choose a minor option--</option>
+                    <option value="Aeolian" label="Aeolian/Minor Scale"></option>
+                    <option value="Pentatonic" label="Minor Pentatonic"></option>
+
+                    <option value="Dorian">Dorian</option>
+                    <option value="Phrygian">Phrygian</option>
+
+                    
+                </select>
+            </div>
+            
+            <!-- Radio buttons for displaying notes vs intervals -->
+            <div class="radio-container">
+                <h2>Display Options</h2>
+                <div>
+                    <input type="radio" id="notes" name="displayType" value="note" checked onchange="handleScaleSelection()">
+                    <label for="notes">Notes</label>
+                    <input type="radio" id="intervals" name="displayType" value="int" onchange="handleScaleSelection()">
+                    <label for="intervals">Intervals</label>
+                </div>
+                <div>
+                    <input type="radio" id="noPosition" name="position" value="off" checked onchange="handleScaleSelection()">
+                    <label for="noPosition">Position Off</label>
+                    <input type="radio" id="position" name="position" value="on" onchange="handleScaleSelection()">
+                    <label for="position">Position On</label>
+                </div>
+            </div>
+            
+            <!-- Image container -->
+            <div id="imageContainer" style="display: none;">
+                <img id="scaleImage" src="" alt="Scale Image" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Antonio Desi Rivera</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
