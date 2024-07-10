@@ -72,7 +72,7 @@ function handleScaleSelection() {
         // Encode the key and scale values to handle special characters
         const encodedKeyValue = encodeURIComponent(keyValue);
         const encodedMajorMinorValue = encodeURIComponent(majorMinorValue);
-        const encodedScale = encodeURIComponent(selectedScale.toLowerCase());
+        const encodedScale = encodeURIComponent(selectedScale);
         const encodedImageFileName = encodeURIComponent(displayType + (position === 'on' ? '-pos' : ''));
 
         // Build the image path based on the selected options
