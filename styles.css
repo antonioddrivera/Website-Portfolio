@@ -201,6 +201,53 @@
     background-color: #141414;
 }
 
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 30vh;
+    background-color: #141414;
+    z-index: 1;
+    width: 600%;
+    max-width: 1300px;
+    padding: 0 50px;
+    padding-bottom: 20%;
+    padding-left: 20%;
+    text-align: center;
+
+
+}
+
+.skills h1 {
+    font-size: 3rem;
+    background-color: #ca291e;
+    background-image: linear-gradient(to top, 
+    #bf5700 0%, #333f48 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-align: center;
+}
+
+.skills p {
+    font-size: 1.3rem;
+    background-color: #141414;
+    padding-right: 80px; /* Adjust the padding as needed */
+    margin-top: 20px; /* Adjust as needed to lower the paragraph */
+    grid-column: span 2; /* Make the paragraph span across both columns */
+    height: 20vh;
+    color: #b8b9b9;
+    width: 150%;
+    position: relative; /* Corrected typo */
+    left: -384.1px; /* Adjust the left value to shift to the left */
+     /* Adjust the top value if needed */
+}
+
+
 .school {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -348,7 +395,7 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    height: 70vh;
+    height: 50vh;
     background-color: #141414;
     z-index: 1;
     width: 100%;
@@ -562,9 +609,9 @@ main__image--container {
     }
 }
 
+/* Page Direction Section CSS */
 
-/* Services Section  CSS*/
-.services {
+.pagess {
     background: #141414;
     display: flex;
     flex-direction: column;
@@ -573,7 +620,7 @@ main__image--container {
 
 }
 
-.services h1 {
+.pages h1 {
     background-color: #ff8177;
     background-image: linear-gradient(to right, 
     #ff8177 0%, 
@@ -593,14 +640,14 @@ main__image--container {
     -moz-text-fill-color: transparent;
 }
 
-.services__container {
+.pages__container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 
 }
 
-.services__card {
+.pages__card {
     margin: 1rem;
     height: 525px;
     width: 400px;
@@ -615,7 +662,7 @@ main__image--container {
     color: #fff;
 }
 
-.services__card:nth-child(2) {
+.pages__card:nth-child(2) {
     background-image: linear-gradient(
         to bottom, 
         rgba(0,0,0,0) 0%, 
@@ -624,21 +671,21 @@ main__image--container {
 
 }
 
-.services h2 {
+.pages h2 {
     position: absolute;
     top: 350px;
     left: 30px;
 
 }
 
-.services__card p {
+.pages__card p {
     position: absolute;
     top: 400px;
     left: 30px;
 
 }
 
-.services__card button{
+.pages__card button{
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -652,33 +699,183 @@ main__image--container {
     cursor: pointer;
 }
 
-.services__card:hover {
+.pages__card:hover {
     transform: scale(1.075);
     transition: 0.2s ease-in;
     cursor: pointer;
 }
 
+
+
+/* Projects Section  CSS*/
+.projects {
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.projects h1 {
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, 
+    #ff8177 0%, 
+    #ff867a 0%,
+    #ff8c7f 21%, 
+    #f99185 52%, 
+    #cf556c 78%, 
+    #b12a5b 100%
+    );
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.projects h2 {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+
+}
+
+.projects p {
+    
+}
+
+.projects__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.mechatronic__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0,0,0,0) 0%, 
+        rgba(17,17,17,0.6) 100%), 
+        url('/images/hardware1.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+/*
+.mechatronic__card p {
+    position: absolute;
+    top: 200px;
+    left: 30px;
+
+}
+*/
+.mechatronic__card button{
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+/*
+.mechatronic__card:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+*/
+.guitar__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0,0,0,0) 0%, 
+        rgba(17,17,17,0.6) 100%), 
+        url('/images/code2.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.guitar__card p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+
+}
+
+.guitar__card button{
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.guitar__card:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    
+}
+
+.projects__card:nth-child(2) {
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0,0,0,0) 0%, 
+        rgba(17,17,17,0.6) 100%), 
+        url('/images/code2.jpg');
+
+}
+
+
+
+
+
+
 @media screen and (max-width: 960px) {
-    .services {
+    .projects {
         height: 1600px;
     }
 
-    .services h1 {
+    .projects h1 {
         font-size: 2rem;
         margin-top: 12rem;
     }
 }
 
 @media screen and (max-width: 480){
-    .services {
+    .projects {
         height: 1400px;
     }
 
-    .services h1 {
+    .projects h1 {
         font-size: 1.2rem;
     }
 
-    .services__card {
+    .projects__card {
         width: 300px;
     }
 }
