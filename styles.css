@@ -199,6 +199,8 @@
 /* Biography Section */
 .biography {
     background-color: #141414;
+    margin: 0;
+    padding: 0;
 }
 
 .skills {
@@ -207,71 +209,50 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    height: 30vh;
-    background-color: #141414;
-    z-index: 1;
-    width: 600%;
+    height: auto;
     max-width: 1300px;
     padding: 0 50px;
-    padding-bottom: 20%;
-    padding-left: 20%;
     text-align: center;
-
-
 }
 
 .skills h1 {
     font-size: 3rem;
     background-color: #ca291e;
-    background-image: linear-gradient(to top, 
-    #bf5700 0%, #333f48 100%);
+    background-image: linear-gradient(to top, #bf5700 0%, #333f48 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    text-align: center;
+    text-align:center;
 }
 
 .skills p {
     font-size: 1.3rem;
     background-color: #141414;
-    padding-right: 80px; /* Adjust the padding as needed */
-    margin-top: 20px; /* Adjust as needed to lower the paragraph */
-    grid-column: span 2; /* Make the paragraph span across both columns */
-    height: 20vh;
     color: #b8b9b9;
-    width: 150%;
-    position: relative; /* Corrected typo */
-    left: -384.1px; /* Adjust the left value to shift to the left */
-     /* Adjust the top value if needed */
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    grid-column: span 2;
 }
 
-
+/* Section: School */
 .school {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    height: 30vh;
-    background-color: #141414;
-    z-index: 1;
-    width: 600%;
+    height: auto;
     max-width: 1300px;
     padding: 0 50px;
-    padding-bottom: 20%;
-    padding-left: 20%;
     text-align: center;
-
-
 }
 
 .school h1 {
     font-size: 3rem;
     background-color: #ca291e;
-    background-image: linear-gradient(to top, 
-    #0b34a5 0%, #e28d0d 100%);
+    background-image: linear-gradient(to top, #0b34a5 0%, #e28d0d 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -283,40 +264,29 @@
 .school p {
     font-size: 1.3rem;
     background-color: #141414;
-    padding-right: 80px; /* Adjust the padding as needed */
-    margin-top: 20px; /* Adjust as needed to lower the paragraph */
-    grid-column: span 2; /* Make the paragraph span across both columns */
-    height: 20vh;
     color: #b8b9b9;
-    width: 150%;
-    position: relative; /* Corrected typo */
-    left: -384.1px; /* Adjust the left value to shift to the left */
-     /* Adjust the top value if needed */
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    grid-column: span 2;
 }
 
-
+/* Section: Work */
 .work {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    height: 55vh;
-    background-color: #141414;
-    z-index: 1;
-    width: 600%;
+    height: auto;
     max-width: 1300px;
     padding: 0 50px;
-    padding-bottom: 20%;
-    padding-left: 20%;
     text-align: center;
 }
 
 .work h1 {
     font-size: 3rem;
     background-color: #ca291e;
-    background-image: linear-gradient(to top, 
-    #2F241D 0%, #FFC425 140%);
+    background-image: linear-gradient(to top, #2F241D 0%, #FFC425 140%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -328,39 +298,29 @@
 .work p {
     font-size: 1.3rem;
     background-color: #141414;
-    padding-right: 80px; /* Adjust the padding as needed */
-    margin-top: 20px; /* Adjust as needed to lower the paragraph */
-    grid-column: span 2; /* Make the paragraph span across both columns */
-    height: 20vh;
     color: #b8b9b9;
-    width: 150%;
-    position: relative; /* Corrected typo */
-    left: -384.1px; /* Adjust the left value to shift to the left */
-     /* Adjust the top value if needed */
+    margin-top: 1px;
+    grid-column: span 2;
+    margin-bottom: 5rem;
 }
 
+/* Section: Interest */
 .interest {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    height: 40vh;
-    background-color: #141414;
-    z-index: 1;
-    width: 200%;
+    height: auto;
     max-width: 1300px;
     padding: 0 50px;
-    padding-bottom: 20%;
-    padding-left: 20%;
     text-align: center;
 }
 
 .interest h1 {
     font-size: 3rem;
     background-color: #ca291e;
-    background-image: linear-gradient(to top, 
-    #0080C6  0%, #FFC20E  100%);
+    background-image: linear-gradient(to top, #0080C6 0%, #FFC20E 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -372,15 +332,10 @@
 .interest p {
     font-size: 1.3rem;
     background-color: #141414;
-    padding-right: 80px; /* Adjust the padding as needed */
-    margin-top: 20px; /* Adjust as needed to lower the paragraph */
-    grid-column: span 2; /* Make the paragraph span across both columns */
-    height: 20vh;
     color: #b8b9b9;
-    width: 150%;
-    position: relative; /* Corrected typo */
-    left: -384.1px; /* Adjust the left value to shift to the left */
-     /* Adjust the top value if needed */
+    margin-top: 1rem;
+    grid-column: span 2;
+    margin-bottom: 5rem;
 }
 
 /* Hero Section */
@@ -741,7 +696,7 @@ main__image--container {
     color:#ffffff;
     font-weight: bolder;
     padding: 500px;
-    font-size: xx-large;
+    font-size: 2rem;
     z-index: 2;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 
@@ -764,7 +719,7 @@ main__image--container {
     left: 30px;
     color: #ffffff;
     font-weight: bolder;
-    font-size: x-large;
+    font-size: 2rem;
     z-index: 2; /* Place text above the overlay */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
 }
@@ -965,7 +920,7 @@ main__image--container {
 /* Social icons */
 .social__icon--link {
     color: #fff;
-    font-size: 24px;
+    font-size: 1rem;
 
 }
 
