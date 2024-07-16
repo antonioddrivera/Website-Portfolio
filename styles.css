@@ -784,7 +784,7 @@ main__image--container {
 
 }
 
-.guitar__card button{
+.guitar__card button {
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -796,13 +796,13 @@ main__image--container {
     left: 30px;
     font-size: 1rem;
     cursor: pointer;
+    z-index: 1;
 }
 
-.guitar__card:hover {
+.guitar__card button:hover {
     transform: scale(1.075);
     transition: 0.2s ease-in;
     cursor: pointer;
-    
 }
 
 .projects__card:nth-child(2) {
