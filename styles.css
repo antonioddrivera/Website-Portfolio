@@ -201,6 +201,7 @@
     background-color: #141414;
     margin: 0;
     padding: 0;
+    text-align: center
 }
 
 .skills {
@@ -212,7 +213,6 @@
     height: auto;
     max-width: 1300px;
     padding: 0 50px;
-    text-align: center;
 }
 
 .skills h1 {
@@ -224,7 +224,8 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    text-align:center;
+    text-align: center;
+    grid-column: span 2;
 }
 
 .skills p {
@@ -234,6 +235,7 @@
     margin-top: 1rem;
     margin-bottom: 5rem;
     grid-column: span 2;
+    text-align: center;
 }
 
 /* Section: School */
@@ -246,7 +248,6 @@
     height: auto;
     max-width: 1300px;
     padding: 0 50px;
-    text-align: center;
 }
 
 .school h1 {
