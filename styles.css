@@ -260,6 +260,7 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     text-align: center;
+    grid-column: span 2;
 }
 
 .school p {
@@ -294,6 +295,7 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     text-align: center;
+    grid-column: span 2;
 }
 
 .work p {
@@ -328,6 +330,7 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     text-align: center;
+    grid-column: span 2;
 }
 
 .interest p {
@@ -344,24 +347,6 @@
 .main {
     background-color: #141414;
 }
-
-.main__about__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    height: 50vh;
-    background-color: #141414;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0 50px;
-    padding-bottom: 20%;
-    padding-left: 20%;
-    text-align: center;
-}
-
 
 .main__container {
     display: grid;
@@ -424,11 +409,64 @@
     color:#21d4fd;
     margin-top: 20px;
     font-size: 1rem;
-    font-weight: 500;
-
-
-    
+    font-weight: 500;   
 }
+
+.main__about__container {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    max-width: 300rem;
+
+}
+
+
+
+.main__about__content h1 {
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, 
+    #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__about__content h2 {
+    font-size: 3.5rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, 
+    #b721ff 0%, #21d4fd 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__about__content h3 {
+    font-size: 1.5rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, 
+    #b721ff 0%, #21d4fd 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__about__content p {
+    color: #e9e9e9;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 
 .main__btn {
     font-size: 1rem;
@@ -541,7 +579,6 @@ main__image--container {
     .main__content {
         text-align: center;
         margin-bottom: 4rem;
-
     }
 
     .main__content h1 {
