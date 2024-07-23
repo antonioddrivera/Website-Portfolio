@@ -747,7 +747,6 @@ main__image--container {
     flex-direction: column;
     align-items: center;
     height: 100vh;
-
 }
 
 .projects h1 {
@@ -780,6 +779,7 @@ main__image--container {
     font-size: 2rem;
     z-index: 2;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    margin-bottom: 5%;
 
 }
 
@@ -811,7 +811,7 @@ main__image--container {
     flex-wrap: wrap;
 
 }
-
+/* Mechatronics project card*/
 .mechatronic__card {
     margin: 1rem;
     height: 525px;
@@ -842,7 +842,7 @@ main__image--container {
     font-size: 1rem;
     cursor: pointer;
 }
-
+/* Guitar Scales project card*/
 .guitar__card {
     margin: 1rem;
     height: 525px;
@@ -852,7 +852,7 @@ main__image--container {
         to bottom, 
         rgba(0,0,0,0) 0%, 
         rgba(17,17,17,0.6) 100%), 
-        url('/images/code2.jpg');
+        url('/images/scaleimage.png');
     background-size: cover;
     position: relative;
     color: #fff;
@@ -881,6 +881,95 @@ main__image--container {
 }
 
 .guitar__card button:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+
+/* RFID project card*/
+.rfid__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0,0,0,0) 0%, 
+        rgba(17,17,17,0.6) 100%), 
+        url('/images/rfid.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.rfid__card p {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+
+}
+
+.rfid__card button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.rfid__card button:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+/* image Manipulator project card*/
+.imgman__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0,0,0,0) 0%, 
+        rgba(17,17,17,0.6) 100%), 
+        url('/images/imgman.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.imgman__card p {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+
+}
+
+.imgman__card button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.imgman__card button:hover {
     transform: scale(1.075);
     transition: 0.2s ease-in;
     cursor: pointer;
