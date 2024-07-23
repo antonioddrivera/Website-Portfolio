@@ -201,6 +201,7 @@
     background-color: #141414;
     margin: 0;
     padding: 0;
+    text-align: center
 }
 
 .skills {
@@ -212,7 +213,6 @@
     height: auto;
     max-width: 1300px;
     padding: 0 50px;
-    text-align: center;
 }
 
 .skills h1 {
@@ -224,7 +224,8 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    text-align:center;
+    text-align: center;
+    grid-column: span 2;
 }
 
 .skills p {
@@ -234,6 +235,7 @@
     margin-top: 1rem;
     margin-bottom: 5rem;
     grid-column: span 2;
+    text-align: center;
 }
 
 /* Section: School */
@@ -246,7 +248,6 @@
     height: auto;
     max-width: 1300px;
     padding: 0 50px;
-    text-align: center;
 }
 
 .school h1 {
@@ -259,6 +260,7 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     text-align: center;
+    grid-column: span 2;
 }
 
 .school p {
@@ -293,6 +295,7 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     text-align: center;
+    grid-column: span 2;
 }
 
 .work p {
@@ -327,6 +330,7 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     text-align: center;
+    grid-column: span 2;
 }
 
 .interest p {
@@ -343,24 +347,6 @@
 .main {
     background-color: #141414;
 }
-
-.main__about__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    height: 50vh;
-    background-color: #141414;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0 50px;
-    padding-bottom: 20%;
-    padding-left: 20%;
-    text-align: center;
-}
-
 
 .main__container {
     display: grid;
@@ -423,11 +409,64 @@
     color:#21d4fd;
     margin-top: 20px;
     font-size: 1rem;
-    font-weight: 500;
-
-
-    
+    font-weight: 500;   
 }
+
+.main__about__container {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    max-width: 300rem;
+
+}
+
+
+
+.main__about__content h1 {
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, 
+    #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__about__content h2 {
+    font-size: 3.5rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, 
+    #b721ff 0%, #21d4fd 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__about__content h3 {
+    font-size: 1.5rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, 
+    #b721ff 0%, #21d4fd 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__about__content p {
+    color: #e9e9e9;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 
 .main__btn {
     font-size: 1rem;
@@ -540,7 +579,6 @@ main__image--container {
     .main__content {
         text-align: center;
         margin-bottom: 4rem;
-
     }
 
     .main__content h1 {
@@ -571,7 +609,8 @@ main__image--container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    min-height: 100dvh;
+    
 }
 
 .pages h1 {
@@ -656,7 +695,49 @@ main__image--container {
     cursor: pointer;
 }
 
+/* Home Pages Scales Card*/
+.pages__card__scales {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0,0,0,0) 0%, 
+        rgba(17,17,17,0.6) 100%), 
+        url('/images/hardware1.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+   
+}
 
+.pages__card__scales p {
+    position: relative;
+    top: 420px;
+    left: 30px;
+}
+
+.pages__card__scales button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.pages__card__scales button:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
 
 
 /* Projects Section  CSS*/
@@ -666,7 +747,6 @@ main__image--container {
     flex-direction: column;
     align-items: center;
     height: 100vh;
-
 }
 
 .projects h1 {
@@ -699,6 +779,7 @@ main__image--container {
     font-size: 2rem;
     z-index: 2;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    margin-bottom: 5%;
 
 }
 
@@ -730,7 +811,7 @@ main__image--container {
     flex-wrap: wrap;
 
 }
-
+/* Mechatronics project card*/
 .mechatronic__card {
     margin: 1rem;
     height: 525px;
@@ -761,7 +842,7 @@ main__image--container {
     font-size: 1rem;
     cursor: pointer;
 }
-
+/* Guitar Scales project card*/
 .guitar__card {
     margin: 1rem;
     height: 525px;
@@ -771,7 +852,7 @@ main__image--container {
         to bottom, 
         rgba(0,0,0,0) 0%, 
         rgba(17,17,17,0.6) 100%), 
-        url('/images/code2.jpg');
+        url('/images/scaleimage.png');
     background-size: cover;
     position: relative;
     color: #fff;
@@ -784,7 +865,7 @@ main__image--container {
 
 }
 
-.guitar__card button{
+.guitar__card button {
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -796,13 +877,102 @@ main__image--container {
     left: 30px;
     font-size: 1rem;
     cursor: pointer;
+    z-index: 1;
 }
 
-.guitar__card:hover {
+.guitar__card button:hover {
     transform: scale(1.075);
     transition: 0.2s ease-in;
     cursor: pointer;
-    
+}
+
+
+/* RFID project card*/
+.rfid__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0,0,0,0) 0%, 
+        rgba(17,17,17,0.6) 100%), 
+        url('/images/rfid.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.rfid__card p {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+
+}
+
+.rfid__card button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.rfid__card button:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+/* image Manipulator project card*/
+.imgman__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0,0,0,0) 0%, 
+        rgba(17,17,17,0.6) 100%), 
+        url('/images/imgman.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.imgman__card p {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+
+}
+
+.imgman__card button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.imgman__card button:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
 }
 
 .projects__card:nth-child(2) {
@@ -854,6 +1024,7 @@ main__image--container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: auto;
 
 }
 
@@ -989,5 +1160,16 @@ main__image--container {
         margin: 0;
         padding: 10px;
         width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .pages__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pages__card {
+        width: 90%;
+        height: auto;
     }
 }
