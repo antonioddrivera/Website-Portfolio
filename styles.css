@@ -714,7 +714,7 @@ main__image--container {
         to bottom, 
         rgba(0,0,0,0) 0%, 
         rgba(17,17,17,0.6) 100%), 
-        url('/images/hardware1.jpg');
+        url('/images/scaleweb.png');
     background-size: cover;
     position: relative;
     color: #fff;
@@ -995,9 +995,6 @@ main__image--container {
 
 
 
-
-
-
 @media screen and (max-width: 960px) {
     .projects {
         height: 1600px;
@@ -1022,6 +1019,34 @@ main__image--container {
         width: 300px;
     }
 }
+
+
+
+@media screen and (max-width: 960px) {
+    .pages {
+        height: 1600px;
+    }
+
+    .pages h1 {
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+}
+
+@media screen and (max-width: 480){
+    .pages{
+        height: 1400px;
+    }
+
+    .pages h1 {
+        font-size: 1.2rem;
+    }
+
+    .pages__card {
+        width: 300px;
+    }
+}
+
 
 /* CSS Footer */
 
