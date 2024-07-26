@@ -1171,14 +1171,3 @@ main__image--container {
         width: 100%;
     }
 }
-@media screen and (max-width: 768px) {
-    .pages__container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .pages__card {
-        width: 90%;
-        height: auto;
-    }
-}
